@@ -1,45 +1,45 @@
-# code-sample-description
-This sample repo will show you how to easily do X with Nylas.
+# ruby-read-webhooks
+
+This sample will show you to read webhooks using the Nylas Ruby SDK.
 
 ## Setup
 
+You need a web server capable of running Ruby code. [Koyeb](https://www.koyeb.com/) is a great option.
+
 ### System dependencies
 
-- Add System dependencies
+Handled by the web server.
 
 ### Gather environment variables
 
-You'll need the following values from the Nylas Dashboard:
+You'll need to create the following environment values:
 
 ```text
-ACCESS_TOKEN = ""
-CLIENT_ID = ""
-CLIENT_SECRET = ""
+V3_TOKEN
+BASE_URL
+GRANT_ID
+CALENDAR_ID
+CLIENT_SECRET
 ```
-
-Add the above values to a `.env` file.
-
-The `.env` file is added to `.gitignore`. Ensure to store these values securely.
 
 ### Install dependencies
 
-[replace with install steps]
+Everything is on the Gemfile file, but here they are:
+
 ```bash
-$ npm i
+nylas / 6.0.0.beta.1
+sinatra / 3.1.0
+sinatra-contrib / 3.1.0
+rack / 2.2.8
+puma / 6.3.1
 ```
+
+# Compilation
+
+Clone this repo and use it as the source for your web server compilation
 
 ## Usage
 
-The recommended way to use this sample is ...
+Run the generated web page.
 
-You can also clone the repository ...
-
-You'll find more detailed instructions ...
-
-## Get support
-
-If you found a bug or want to suggest a new [feature/use case/sample], please file an issue.
-
-## Learn more
-
-Visit our [Nylas documentation](https://developer.nylas.com/) to learn more.
+If successful, you will start to see all your incoming webhooks
